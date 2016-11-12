@@ -1,0 +1,21 @@
+<div class="col-md-6 col-md-offset-3">
+
+    <h2 class="container">Login</h2>
+    <div class="container">
+        <form name="form" ng-submit="studentLogin(userStu)">
+            <div class="form-group">
+            <input type="text"  ng-model="userStu.name" class="form-control" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+            <input type="password" ng-model="userStu.pass" class="form-control" placeholder="Password" required>
+            </div>
+
+
+            <div class="form-actions">
+            <button type="submit"  class="btn btn-primary">Login</button>
+            <a href="#/register" class="btn btn-link">Register</a>
+        </div>
+        </form>
+</div>
+</div>

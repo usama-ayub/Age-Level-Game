@@ -1,0 +1,21 @@
+<div class="main">
+<div class="header1">
+    <div class="title1">Ignore color combination</div>
+</div>
+<section>
+    <h4 class="text-center">Score: {{score}}</h4>
+    <div class="row">
+        <div class="col button" ng-click="submit(c.val1,c.val2)" ng-style="{'background-color':c.val1}" ng-repeat="c in current">
+            <span>{{c.val2}}</span>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="progress" ng-style="{'width':progress()}"></div>
+</footer>
+<div class="loading-container" ng-class="{'active': loading.isShow}">
+    <div class="loading" ng-click="tryAgain()">
+        <h4>{{loading.text}}</h4>
+    </div>
+</div>
+</div>

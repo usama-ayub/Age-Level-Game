@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/ignoreColor.css">
+    <link rel="stylesheet" href="style/equation.css">
+    <link rel="stylesheet" href="style/puzzle.css">
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div ng-class="{ 'alert': obj, 'alert-success': obj.type === 'success', 'alert-danger': obj.type === 'error' }" ng-if="obj" ng-bind="obj.message"></div>
+            <div ng-view>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="libs/jquery/jquery.min.js"></script>
+</body>
+</html>

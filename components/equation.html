@@ -1,0 +1,29 @@
+<div class="main1">
+<div class="header2">
+    <div class="title2">Evalute the Equation</div>
+</div>
+<section>
+    <div class="q">
+        <h4  class="text-center">Score: {{score}}</h4>
+        <h2 class="text-center">{{current.val1}} &#9744; {{current.val2}} = {{current.ans}}</h2>
+    </div>
+   <!-- <div class="row">
+        <div class="col button button-positive" ng-click="submit('+')">+</div>
+        <div class="col button button-positive" ng-click="submit('-')">-</div>
+    </div>-->
+    <div class="row">
+        <div class="col button button-positive" ng-click="submit('+')">+</div>
+        <div class="col button button-positive" ng-click="submit('-')">-</div>
+        <div class="col button button-positive" ng-click="submit('*')">x</div>
+        <div class="col button button-positive" ng-click="submit('/')">&divide;</div>
+    </div>
+</section>
+<footer>
+    <div class="progress" ng-style="{'width':progress()}"></div>
+</footer>
+<div class="loading-container" ng-class="{'active': loading.isShow}">
+    <div class="loading" ng-click="tryAgain()">
+        <h4>{{loading.text}}</h4>
+    </div>
+</div>
+</div>

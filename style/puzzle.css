@@ -1,0 +1,20 @@
+.puzzle {
+    width: 302px;
+}
+.puzzle .btn-group {
+    margin-bottom: 10px;
+}
+.puzzle .pieces {
+    border: 1px solid #ccc;
+    height: 302px;
+}
+.puzzle .pieces .piece {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+    vertical-align: top;
+}
+.puzzle .pieces .piece.empty {
+    background: #fff;
+}

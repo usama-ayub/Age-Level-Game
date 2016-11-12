@@ -1,0 +1,101 @@
+.main1 {
+    margin: 0;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: #f1f1f1;
+}
+.header2 .title2 {
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    position: fixed;
+    top: 48px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+section {
+    position: fixed;
+    top: 48px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+section h2 {
+    font-size: 3em;
+    margin: 1em 0;
+}
+section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+section .row .col {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100px;
+    color: #fff;
+    margin: 5px;
+    height: 100px;
+    background: #40A1F5;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background-color: #eee;
+}
+footer .progress {
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all 1s linear;
+    background-color: #aaa;
+    margin: 0;
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.loading-container.active {
+    display: block;
+}
+.loading-container .loading {
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #ddd;
+}

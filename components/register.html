@@ -1,0 +1,24 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2 class="container">Register</h2>
+    <div class="container">
+
+    <form name="form" ng-submit="addStudent(stuData)" role="form">
+        <div class="form-group">
+        <input type="text" name="username" ng-model="stuData.name"  class="form-control" placeholder="Name" required >
+         </div>
+
+        <div class="form-group">
+        <input type="password"  ng-model="stuData.pass" class="form-control" placeholder="Password" required>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit"  class="btn btn-primary">Register</button>
+            <a href="#/" class="btn btn-link">Cancel</a>
+        </div>
+    </form>
+        </div>
+</div>
+
+
+
+

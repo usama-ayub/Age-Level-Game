@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/puzzle.css">
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="check.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">
+        Puzzle Game
+    </h1>
+    <div class="jumbotron">
+        <div class="puzzle center-block">
+            <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-success btn-start"><span class="glyphicon glyphicon-play-circle"></span>&nbsp;Iniciar</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-default">Cliques: <span class="badge total"></span></button>
+                </div>
+            </div>
+            <div class="pieces"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="progress" ng-style="{'width':progress()}"></div>
+    </footer>
+    <div class="loading-container" ng-class="{'active': loading.isShow}">
+        <div class="loading" ng-click="tryAgain()">
+            <h4>{{loading.text}}</h4>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+</body>
+</html>
